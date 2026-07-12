@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="55%" stop-color="#0f2340"/>
+      <stop offset="100%" stop-color="#0a1a30"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#c99a2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#37c9f5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#37c9f5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#37c9f5" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#37c9f5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#37c9f5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- blueprint grid backdrop -->
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="190" x2="1200" y2="190"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="290" x2="1200" y2="290"/>
+    <line x1="120" y1="0" x2="120" y2="360"/>
+    <line x1="260" y1="0" x2="260" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="540" y1="0" x2="540" y2="360"/>
+    <line x1="680" y1="0" x2="680" y2="360"/>
+    <line x1="820" y1="0" x2="820" y2="360"/>
+    <line x1="960" y1="0" x2="960" y2="360"/>
+    <line x1="1100" y1="0" x2="1100" y2="360"/>
+  </g>
+
+  <ellipse cx="920" cy="150" rx="360" ry="260" fill="url(#glow)"/>
+
+  <!-- stylized map contour lines -->
+  <g fill="none" stroke="#2f5c8a" stroke-width="1.5" opacity="0.55">
+    <path d="M760 300 Q 850 220 800 140 Q 760 80 850 40"/>
+    <path d="M800 320 Q 900 240 860 150 Q 820 70 920 30"/>
+    <path d="M840 330 Q 950 250 910 160 Q 880 60 990 20"/>
+  </g>
+
+  <!-- map pin markers -->
+  <g fill="#37c9f5" opacity="0.85">
+    <circle cx="880" cy="120" r="4"/>
+    <circle cx="960" cy="200" r="4"/>
+    <circle cx="1020" cy="90" r="4"/>
+    <circle cx="1060" cy="230" r="4"/>
+  </g>
+  <g stroke="#37c9f5" stroke-width="1" opacity="0.4">
+    <line x1="880" y1="120" x2="960" y2="200"/>
+    <line x1="960" y1="200" x2="1020" y2="90"/>
+    <line x1="1020" y1="90" x2="1060" y2="230"/>
+  </g>
+
+  <!-- key / unlock emblem -->
+  <g transform="translate(970,240)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <rect x="26" y="-6" width="46" height="10" fill="url(#gold)"/>
+    <rect x="60" y="4" width="8" height="14" fill="url(#gold)"/>
+    <rect x="45" y="4" width="8" height="10" fill="url(#gold)"/>
+  </g>
+
+  <!-- corner accent lines -->
+  <line x1="60" y1="330" x2="1140" y2="330" stroke="url(#line)" stroke-width="2"/>
+  <line x1="60" y1="46" x2="480" y2="46" stroke="#37c9f5" stroke-width="2" opacity="0.6"/>
+
+  <!-- lock badge near headline -->
+  <g transform="translate(75,95)">
+    <rect x="-14" y="-4" width="28" height="22" rx="4" fill="none" stroke="#f6d365" stroke-width="3"/>
+    <path d="M-8 -4 v-8 a8 8 0 0 1 16 0 v8" fill="none" stroke="#f6d365" stroke-width="3"/>
+  </g>
+
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="68" font-weight="700" fill="#f4f8fb">
+    <tspan x="60" y="150" textLength="1000" lengthAdjust="spacingAndGlyphs">Bentley Map Full Access</tspan>
+    <tspan x="60" y="222" textLength="380" lengthAdjust="spacingAndGlyphs" fill="url(#gold)">+ Product</tspan>
+  </text>
+
+  <text x="60" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#a9c3dc">
+    <tspan x="60" y="270" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="19.6">Activates Bentley Map Full Access with built-in product key license patch — single binary</tspan>
+  </text>
+
+  <g opacity="0.7">
+    <circle cx="120" cy="300" r="3" fill="#37c9f5"/>
+    <circle cx="150" cy="290" r="2" fill="#f6d365"/>
+    <circle cx="180" cy="305" r="2.5" fill="#37c9f5"/>
+  </g>
+</svg>
